@@ -2,22 +2,35 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-body: black;
+  --color-body-text: white;
+  --color-primary: deeppink;
+  --color-border: hsl(0deg 0% 100% / 50%);
+  --color-footer: hsl(0deg 0% 100% / 10%);
+
+  --font-body: system-ui;
+  --font-heading: serif;
+
+  --radius: 0.75rem;
+}
+
 .overline {
-  color: deeppink;
+  color: var(--color-primary);
   letter-spacing: 0.5rem;
   text-transform: uppercase;
 }
 
 body {
-  color: white;
-  background: black;
+  color: var(--color-body-text);
+  background: var(--color-body);
   margin: 0;
-  font-family: system-ui;
+  font-family: var(--font-body);
 }
 
 h1,
 h2 {
-  font-family: serif;
+  font-family: var(--font-serif);
   font-style: normal;
   font-weight: 400;
   line-height: 4rem; /* 100% */
@@ -37,7 +50,7 @@ p {
 
 .badge {
   border-radius: 99rem;
-  border: 1px solid hsl(0deg 0% 100% / 50%);
+  border: 1px solid var(--color-border);
   padding: 0.5rem 0.75rem;
 }
 
@@ -54,7 +67,7 @@ p {
 }
 
 img {
-  border-radius: 0.75rem;
+  border-radius: var(--radius);
   max-width: 100%;
   display: block;
 }
@@ -65,6 +78,6 @@ img {
 }
 
 footer {
-  background: hsl(0deg 0% 100% / 10%);
+  background: var(--color-footer);
   padding-block: 4rem;
 }
