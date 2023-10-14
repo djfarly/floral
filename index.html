@@ -97,11 +97,17 @@
           <form action="https://formspree.io/f/xnqklzel" method="post">
             <div>
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="name" required class="input" />
             </div>
             <div>
               <label for="email">E-Mail</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="input"
+              />
             </div>
             <fieldset>
               <legend>Anliegen</legend>
@@ -141,9 +147,10 @@
                 id="message"
                 rows="5"
                 required
+                class="input"
               ></textarea>
             </div>
-            <button type="submit">Nachricht senden</button>
+            <button type="submit" class="button">Nachricht senden</button>
           </form>
         </article>
       </section>

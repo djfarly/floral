@@ -166,9 +166,38 @@ footer {
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   transition: all 0.2s;
+  border: none;
+  font: inherit;
 }
 
 .button:hover {
   color: var(--color-primary);
   background: var(--color-primary-text);
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  accent-color: var(--color-primary);
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  margin-block-start: 0.25rem;
+  font: inherit;
+  resize: vertical;
+}
+
+fieldset {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem;
+  margin: 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
 }
