@@ -59,6 +59,9 @@ p {
   list-style: none;
   padding: 0;
   margin-block: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .link {
@@ -78,7 +81,21 @@ img {
   margin-inline: auto;
 }
 
+header {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 footer {
   background: var(--color-footer);
   padding-block: 4rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
 }
