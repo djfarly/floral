@@ -78,6 +78,11 @@ p {
   font-size: 1.25rem;
 }
 
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
 img {
   border-radius: var(--radius);
   max-width: 100%;
@@ -133,4 +138,10 @@ footer {
   text-decoration: none;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  color: var(--color-primary);
+  background: var(--color-primary-text);
 }
