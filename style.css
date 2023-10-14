@@ -6,6 +6,7 @@
   --color-body: black;
   --color-body-text: white;
   --color-primary: deeppink;
+  --color-primary-text: white;
   --color-border: hsl(0deg 0% 100% / 50%);
   --color-footer: hsl(0deg 0% 100% / 10%);
 
@@ -118,4 +119,18 @@ footer {
 
 .span-2 {
   grid-column: span 2;
+}
+
+.button {
+  background: var(--color-primary);
+  color: var(--color-primary-text);
+  height: 3.5rem;
+  width: fit-content;
+  display: flex;
+  padding-inline: 2rem;
+  align-items: center;
+  border-radius: var(--radius);
+  text-decoration: none;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
 }
