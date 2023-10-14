@@ -27,6 +27,13 @@ body {
     var(--color-body);
   margin: 0;
   font-family: var(--font-body);
+  display: grid;
+  gap: 4rem;
+}
+
+main {
+  display: grid;
+  gap: 6rem;
 }
 
 h1,
@@ -98,4 +105,17 @@ footer {
   gap: 3rem;
   list-style: none;
   padding: 0;
+}
+
+.grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.span-2 {
+  grid-column: span 2;
 }
